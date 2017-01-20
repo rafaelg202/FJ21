@@ -16,7 +16,15 @@
 		<c:forEach var="contato" items="${dao.lista}" varStatus="id">
 			<tr bgcolor="#${id.count % 2 == 0 ? '#6495ED' : 'ffffff'}">
 				<td>${contato.nome }</td>
-				<td>${contato.email }</td>
+				<td>
+					<c:if test="${not empty contato.email}">
+					<a href="mailto:${contato.email}">${contato.email}</a>
+					</c:if>	
+					
+					<c:if test="${empty contato.email}">
+					 E-mail não informado
+					</c:if>		
+				</td>
 				<td>${contato.endereco }</td>
 				<td>${contato.dataNascimento.time }</td>
 			</tr>
