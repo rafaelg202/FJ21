@@ -12,8 +12,9 @@ public class AlteraContatoLogic implements Logica{
 	
 	public String executa (HttpServletRequest req, HttpServletResponse res)
 		throws Exception {
+			return null;
 		
-		long id = Long.parseLong(req.getParameter("id"));
+		/*long id = Long.parseLong(req.getParameter("id"));
 		String email = req.getParameter("email");
 		String endereco = req.getParameter("endereco");
 		String nome = req.getParameter("nome");
@@ -31,7 +32,7 @@ public class AlteraContatoLogic implements Logica{
 		
 		System.out.println("Alterando Contato...");
 		
-		return "mvc?logica=ListaContatosLogic";
+		return "mvc?logica=ListaContatosLogic";*/
 		
 	}
 

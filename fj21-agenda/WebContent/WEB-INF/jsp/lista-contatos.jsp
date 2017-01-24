@@ -11,7 +11,6 @@
 </head>
 <body>
 	<!-- cria o DAO -->
-	<!-- Desabilitado por conta do MVC <jsp:useBean id="dao" class="br.com.caelum.agenda.dao.ContatoDao"/> -->
 	
 	<table border="1">
 		<!-- percorre contato montando as linhas da tabela -->
